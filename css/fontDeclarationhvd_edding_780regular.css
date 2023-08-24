@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'hvd_edding_780regular';
+    src: url('hvd_edding-webfont.eot');
+    src: url('hvd_edding-webfont.eot?#iefix') format('embedded-opentype'),
+         url('hvd_edding-webfont.woff2') format('woff2'),
+         url('hvd_edding-webfont.woff') format('woff'),
+         url('hvd_edding-webfont.ttf') format('truetype'),
+         url('hvd_edding-webfont.svg#hvd_edding_780regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+

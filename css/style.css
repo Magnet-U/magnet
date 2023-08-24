@@ -1,0 +1,413 @@
+<style>
+*{
+  margin: 0;
+        padding: 0;
+        border: 0;
+        outline: 0;
+        font-size: 100%;
+        vertical-align: baseline;
+        background: transparent;
+  }
+
+.titleBlog{
+font-family: 'hvd_bodedomedium', Arial, sans-serif;
+color: hotpink;
+font-size: 30px;
+text-transform: uppercase;
+text-align: center;
+margin-top: 30px;
+}
+
+.subTitle{
+  font-family: 'hvd_bodedomedium', Arial, sans-serif;
+  color: hotpink;
+  font-size: 15px;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom:30px;
+}
+
+
+.titlePost{
+  font-family: 'candelabook', Arial, sans-serif;
+  font-size: 20px;
+  color: hotpink;
+  text-transform: uppercase;
+}
+
+.header{
+  display:flex;
+}
+.magnetInHeader{
+  position:absolute;
+  top:3%;
+  left:2%;
+}
+
+.headerTitle a{
+  text-decoration:none;
+  color:white;
+}
+
+.headerContainer{
+  display: flex;
+  background-color: hotpink;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: baseline;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.headerTitle{
+  padding-right: 1vw;
+  padding-left: 1vw;
+  padding-top: 3vh;
+  padding-bottom: 3vh;
+}
+
+.headerTitle
+{ font-family: 'hvd_bodedomedium', Arial, sans-serif;
+font-size: 17px;
+color: white}
+
+.headerTitle:hover{
+  background-color: black;
+  padding:0;
+}
+/*doesnt work
+.infiltrato{
+  position:absolute;
+  display: inline-block;
+  background-color: hotpink;
+  width:120%;
+  top:-10px;
+  margin-left: -50px;
+  height:86px;
+  z-index: -1;
+}
+*/
+.line{
+  border-style:dotted;
+  border-top:2px;
+  margin-top:9px;
+  border-color: hotpink;
+  margin-left: -
+}
+p
+{ font-family: 'candelabook', Arial, sans-serif;
+font-size: 18px;}
+
+ul{
+  font-family: 'candelabook', Arial, sans-serif;
+  font-size: 16px;
+}
+
+ol{
+  font-family: 'candelabook', Arial, sans-serif;
+  font-size: 16px;
+}
+.postRight{
+  position: relative;
+  background: white;
+  text-align: right;
+  max-width: 80%;
+  padding: 0px 15px;
+  border-radius: 10px;
+  border: 1px solid hotpink;
+  float: right;
+  right: 20px;
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+
+.postRight::before {
+  content: '';
+  position: absolute;
+  visibility: visible;
+  top: -1px;
+  right: -10px;
+  border: 10px solid transparent;
+  border-top: 10px solid hotpink;
+}
+
+.postRight::after {
+  content: '';
+  position: absolute;
+  visibility: visible;
+  top: 0px;
+  right: -8px;
+  border: 10px solid transparent;
+  border-top: 10px solid white;
+  clear: both;
+}
+
+.postLeft{
+  position: relative;
+  background: white;
+  text-align: left;
+  max-width: 80%;
+  padding: 0px 15px;
+  border-radius: 6px;
+  border: 1px solid hotpink;
+  float: left;
+  left: 20px;
+}
+
+.postLeft::before {
+  content: '';
+  position: absolute;
+  visibility: visible;
+  top: -1px;
+  left: -10px;
+  border: 10px solid transparent;
+  border-top: 10px solid hotpink;
+}
+
+.postLeft::after {
+  content: '';
+  position: absolute;
+  visibility: visible;
+  top: 0px;
+  left: -8px;
+  border: 10px solid transparent;
+  border-top: 10px solid white;
+  clear: both;
+}
+
+.timeStampContainer{
+display: flex;
+}
+
+.magnetSymbol{
+max-width: 15px;
+height: auto;
+object-fit: scale-down;
+z-index: 1;
+}
+.magnetSymbolBackground{
+  position:absolute;
+  color: transparent;
+  height: 24px;
+  width:20px;
+  background: black;
+  border-radius: 50px;
+  z-index: 0;
+  margin-left: -3px;
+  margin-top: -2px;
+}
+
+
+.timeStampContainerRight{
+display: flex;
+}
+
+.timeStampContainerRightRight{
+  display: flex;
+  justify-content: flex-end;
+  margin-right: -15px;
+}
+
+.magnetBannerIcon{
+  max-width: 50px;
+  height: auto;
+  object-fit: scale-down;
+}
+
+.magnetSymbolRight{
+max-width: 15px;
+height: auto;
+object-fit: scale-down;
+z-index: 1;
+position:absolute;
+margin-left: 2px;
+}
+.magnetSymbolBackgroundRight{
+  position:relative;
+  color: transparent;
+  height: 24px;
+  width:20px;
+  background: black;
+  border-radius: 50px;
+  z-index: 0;
+  margin-top: -3px;
+  margin-right: 10px;
+}
+
+.date{
+font-family:  'candelabook', Arial, sans-serif;
+font-size: 12px;
+padding-left: 5px;
+padding-bottom: 6px;
+}
+
+
+.underConstruction{
+  color: hotpink;
+  text-align: center;
+  line-height: 30%;
+  font-family: 'hvd_bodedomedium', Arial, sans-serif;
+  text-transform: uppercase;
+  font-size: 40px;
+  line-height: 40px;
+  margin-top: 20%;
+}
+
+.postContainer{
+  display: inline-block;
+}
+
+.footer{
+height:100px;
+background-color: black;
+display:flex;
+flex-flow: column;
+justify-content: center;
+width:100%;
+}
+
+.footerContainer{
+display: flex;
+justify-content: center;
+width:100%;
+background-color: black;
+flex-direction: column;
+}
+
+.contact{
+  font-family: 'hvd_bodedomedium', Arial, sans-serif;
+  font-size: 17px;
+  color:white;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.contactEmail{
+  font-family: 'candelabook', Arial, sans-serif;
+  color:white;
+  text-align: center;
+  font-size: 16px;
+}
+
+.license{
+  position: ;
+  display: block;
+  width:99%;
+  text-align: right;
+  border-width:0;
+  margin-top: -45px;
+
+}
+
+.lineFooter{
+  border-style:dotted;
+  border-top:2px;
+  margin-bottom:5px;
+  margin-top: 15px;
+  border-color: black;
+}
+
+/*for entryTravel from now on*/
+
+
+/* trial with flex
+
+.entryTravelAll{
+  display: flex;
+  width:100%;
+  flex-direction: row;
+  flex-flow: ;
+  align-content: space-around;
+}
+
+.entryTravelText{
+display: inline-block;
+flex-shrink: 6;
+align-self:
+}
+
+.entryTravelMap{
+  display: inline-block;
+background-color: yellow;
+}
+*/
+
+.entryTravelAll{
+  margin: 3vw;
+  border-style: solid;
+  border-width: 2px;
+  border-color: hotpink;
+  border-radius: 20px;
+  padding:10px;
+}
+
+.entryTravelMap{
+  width: 40%;
+  height: 550px;
+  display: inline-block;
+  float: left;
+  margin-left: 12px;
+  margin-right: 20px;
+  margin-top: 25px;
+
+}
+
+.entryTravelText{
+text-align: justify;
+}
+
+.entryTravelTitle{
+  font-family: 'candelabook', Arial, sans-serif;
+  font-size: 20px;
+  color: hotpink;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+#mapPalermo{
+  border-radius: 20px;
+  width: 100%;
+  height: inherit;
+  border-style: dotted;
+  border-width: 2.5px;
+  border-color: hotpink;
+  border-top: -40px;
+}
+
+.entryTravelCamera{
+  display:flex;
+  align-items: center;
+}
+.cameraIcon{
+  height: 28px;
+}
+
+.translationEnglishMap{
+  height:28px;
+  padding:5px;
+}
+
+.entryTravelTranslation{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: -10px;
+  margin-bottom: -5px;
+}
+
+@media only screen and (max-width: 650px){
+
+.headerTitle{
+  font-size: 3vw}
+
+  p{
+    font-size: 4vw}
+}
+
+.titleBlog{
+  font-size: 3vw}
+
+
+
+
+<style>
